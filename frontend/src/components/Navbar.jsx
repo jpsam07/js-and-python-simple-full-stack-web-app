@@ -23,11 +23,11 @@ const Navbar = ({ setUsers }) => {
           gap={3}
           display={{base:"none", sm: "flex"}}
         >
-          <img src='../../public/icons/react.png' alt='react icon' width={50} height={50} />
+          <img src='./frontend/public/react.png' alt='react icon' width={50} height={50} />
           <Text fontSize={"40px"}>+</Text>
-          <img src='../../public/icons/python.png' alt='python icon' width={50} height={40} />
+          <img src='./frontend/public/python.png' alt='python icon' width={50} height={40} />
           <Text fontSize={"40px"}>=</Text>
-          <img src='../../public/icons/explode.png' alt='explode head icon' width={45} height={45} />
+          <img src='./frontend/public/explode.png' alt='explode head icon' width={45} height={45} />
         </Flex>
         {/* Right side */}
         <Flex gap={3} alignItems={"center"}>

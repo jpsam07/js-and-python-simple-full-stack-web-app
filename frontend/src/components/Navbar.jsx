@@ -2,6 +2,9 @@ import { Box, Container, Flex, Text, Button, useColorMode, useColorModeValue} fr
 import { IoMoon } from "react-icons/io5";
 import { LuSun } from "react-icons/lu";
 import CreateUserModal from "./CreateUserModal";
+import reactImage from "../assets/images/react.png"; // Import the image
+import pythonImage from "../assets/images/python.png"; // Import the image
+import explodeImage from "../assets/images/explode.png"; // Import the image
 
 const Navbar = ({ setUsers }) => {
   const {colorMode, toggleColorMode } = useColorMode()
@@ -23,11 +26,11 @@ const Navbar = ({ setUsers }) => {
           gap={3}
           display={{base:"none", sm: "flex"}}
         >
-          <img src='./frontend/public/react.png' alt='react icon' width={50} height={50} />
+          <img src={reactImage} alt='react icon' width={50} height={50} />
           <Text fontSize={"40px"}>+</Text>
-          <img src='./frontend/public/python.png' alt='python icon' width={50} height={40} />
+          <img src={pythonImage} alt='python icon' width={50} height={40} />
           <Text fontSize={"40px"}>=</Text>
-          <img src='./frontend/public/explode.png' alt='explode head icon' width={45} height={45} />
+          <img src={explodeImage} alt='explode head icon' width={45} height={45} />
         </Flex>
         {/* Right side */}
         <Flex gap={3} alignItems={"center"}>

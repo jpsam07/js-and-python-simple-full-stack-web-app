@@ -3,13 +3,13 @@ import Navbar from "./components/Navbar";
 import UserGrid from "./components/UserGrid";
 import { useState } from "react";
 
-// export const BASE_URL = import.meta.env.MODE === "development" ? "htttp://127.0.0.1:7731/api" : "/api";
+export const BASE_URL = "http://localhost:5000/api";
 
 function App() {
     const [users, setUsers] = useState([]);
   return (
     <Stack minH={"100vh"}>
-      <Navbar />
+      <Navbar setUsers={setUsers} />
 
       <Container maxW={"1200px"} my={4}></Container>
       <Text
@@ -24,7 +24,7 @@ function App() {
         <Text 
         as={"span"}
         bgGradient={"linear(to-r, cyan.400, blue.500)"} bgClip={"text"}
-        >Peak Gameplay Friends</Text>
+        >Peak Gamer Peeps</Text>
         🎮
       </Text>
 
